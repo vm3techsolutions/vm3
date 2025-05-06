@@ -76,8 +76,8 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-black text-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+<header className="absolute top-0 left-0 w-full bg-black/80 text-white shadow-md z-50">
+<div className="container  mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 ml-4 md:ml-20">
           <img src="/assets/vm3-logo.png" alt="VM3 Logo" className="h-20" />
@@ -126,7 +126,7 @@ export default function Header() {
 
         {/* Contact Info */}
         <div className="hidden md:flex flex-col items-start text-right mr-4 md:mr-20">
-          <span className="text-yellow-400 text-sm font-medium">Call Anytime</span>
+          <span className="text-[#FEC63F] text-sm font-medium">Call Anytime</span>
           <a href="tel:+917877554499" className="text-white hover:text-yellow-400 text-sm">
             +91 7877554499
           </a>
@@ -148,7 +148,7 @@ export default function Header() {
             {menuItems.map((item, i) => (
               <div key={i}>
                 <div
-                  className="hover:text-yellow-400 transition cursor-pointer"
+                  className="hover:text-[#FEC63F] transition cursor-pointer"
                   onClick={() => toggleDropdown(item.title)}
                 >
                   <Link href={item.path || '#'}>{item.title}</Link>
@@ -176,8 +176,8 @@ export default function Header() {
               </div>
             ))}
             <div className="mt-4 text-sm text-right">
-              <span className="text-yellow-400">Call Anytime</span><br />
-              <a href="tel:+917877554499" className="hover:text-yellow-400">
+              <span className="text-[#FEC63F]">Call Anytime</span><br />
+              <a href="tel:+917877554499" className="hover:text-[#FEC63F]">
                 +91 7877554499
               </a>
             </div>
