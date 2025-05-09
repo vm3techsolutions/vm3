@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
@@ -15,8 +16,8 @@ export default function Header() {
     {
       title: 'About Us',
       dropdown: [
-        { title: 'Our Story', path: '/about/company-profile' },
-        { title: 'About Founder', path: '/about/mission' },
+        { title: 'Our Story', path: '/Our-Story' },
+        { title: 'About Founder', path: '/About-Founder' },
       ],
     },
     {
@@ -54,33 +55,35 @@ export default function Header() {
     },
     {
       title: 'Products',
-      path: '/products',
+      path: '/Products',
     },
     {
       title: 'Insights',
-           dropdown: [
-        { title: 'Blog', path: '/Blogs' },
+      dropdown: [
+        { title: 'Blog', path: '/Blog' },
         { title: 'Event', path: '/Event' },
-        { title: 'Case Study', path: '/CaseStudy' },
+        { title: 'Case Study', path: '/Case-Study' },
         { title: 'Gallery', path: '/Gallery' },
       ],
     },
     {
       title: 'Career',
-      path: '/career',
+      path: '/Career',
     },
     {
       title: 'Contact Us',
-      path: '/contact',
+      path: '/Contact',
     },
   ];
 
   return (
-<header className="absolute top-0 left-0 w-full bg-black/80 text-white shadow-md z-50">
-<div className="container  mx-auto px-4 flex items-center justify-between">
+    <header className="absolute top-0 left-0 w-full bg-black/50 text-white shadow-md z-50">
+      <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 ml-4 md:ml-20">
-          <img src="/assets/vm3-logo.png" alt="VM3 Logo" className="h-20" />
+          <Link href="/">
+            <Image src="/assets/vm3-logo.png" alt="VM3 Logo" className="h-20 w-auto" width={80} height={80} />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -102,7 +105,6 @@ export default function Header() {
                         {dropItem.title}
                       </Link>
 
-                      {/* Show only the hovered subDropdown */}
                       {dropItem.subDropdown && (
                         <div className="absolute top-0 left-full bg-white text-black shadow-lg ml-2 py-2 z-50 opacity-0 group-hover/dropdown:opacity-100 invisible group-hover/dropdown:visible transition-all duration-200 min-w-max">
                           {dropItem.subDropdown.map((subItem, subIdx) => (
@@ -127,16 +129,13 @@ export default function Header() {
         {/* Contact Info */}
         <div className="hidden md:flex flex-col items-start text-right mr-4 md:mr-20">
           <span className="text-[#FEC63F] text-sm font-medium">Call Anytime</span>
-          <a href="tel:+917877554499" className="text-white hover:text-yellow-400 text-sm">
+          <Link href="tel:+917877554499" className="text-white hover:text-yellow-400 text-sm">
             +91 7877554499
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-white"
-        >
+        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-white">
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -177,9 +176,9 @@ export default function Header() {
             ))}
             <div className="mt-4 text-sm text-right">
               <span className="text-[#FEC63F]">Call Anytime</span><br />
-              <a href="tel:+917877554499" className="hover:text-[#FEC63F]">
+              <Link href="tel:+917877554499" className="hover:text-[#FEC63F]">
                 +91 7877554499
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

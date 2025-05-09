@@ -1,0 +1,71 @@
+[
+    {
+      "label": "Book Publication",
+      "title": "Dureghi",
+      "images": ["/assets/DureghiPublish1.jpeg", "/assets/DureghiPublish2.jpeg"]
+    },
+    {
+      "label": "Events",
+      "title": "Techsparks 2024",
+      "images": ["/assets/Techsparks1.jpeg", "/assets/Techsparks2.jpeg", "/assets/Techsparks3.jpeg"]
+    },
+    {
+      "label": "Events",
+      "title": "The Meta Awakening 2024",
+      "images": ["/assets/Meta1.jpeg", "/assets/Meta2.jpeg", "/assets/Meta3.jpeg","/assets/Meta4.jpeg","/assets/Meta5.jpeg","/assets/Meta6.jpeg","/assets/Meta7.jpeg","/assets/Meta8.jpeg","/assets/Meta9.jpeg"]
+    },
+    {
+      "label": "Events",
+      "title": "Dubai Event 2023",
+      "desc": "“International Business Star Award to VM3 Tech Solutions” LLP",
+      "images": ["/assets/Dubai1.jpeg", "/assets/Dubai2.jpeg", "/assets/Dubai3.jpeg","/assets/Dubai4.jpeg","/assets/Dubai5.jpeg","/assets/Dubai6.jpeg"]
+    },
+    {
+      "label": "Events",
+      "title": "Lexicon Event",
+      "images": ["/assets/Lexicon1.jpg", "/assets/Lexicon2.jpg", "/assets/Lexicon3.jpg","/assets/Lexicon4.jpg"]
+    },
+    {
+      "label": "Events",
+      "title": "TieCon Event 2022",
+      "images": ["/assets/TieCon1.jpg", "/assets/TieCon2.jpg", "/assets/TieCon3.jpg"]
+    },
+    {
+      "label": "Events",
+      "title": "Indiathon Event 2022",
+      "images": ["/assets/Indiathon1.jpeg"]
+    },
+    {
+      "label": "Events",
+      "title": "Prakarsh Event",
+      "images": ["/assets/Prakarsh1.jpg", "/assets/Prakarsh2.jpg", "/assets/Prakarsh3.jpg","/assets/Prakarsh4.jpg","/assets/Prakarsh5.jpg","/assets/Prakarsh6.jpg"]
+    },
+    {
+      "label": "Events",
+      "title": "Rajuri Event",
+      "desc": "“Shodhu Yashacha Rajmarg” organized by Unity Foundation at Vidya Vikas Mandir, Rajuri.",
+      "images": ["/assets/Rajuri1.jpeg", "/assets/Rajuri2.jpeg", "/assets/Rajuri3.jpeg","/assets/Rajuri4.jpeg","/assets/Rajuri5.jpeg"]
+    },
+  
+    {
+      "label": "Annual Events",
+      "title": "7th Anniversary 2024",
+      "images": ["/assets/7thAnniversary1.jpeg", "/assets/7thAnniversary2.jpeg", "/assets/7thAnniversary3.jpeg","/assets/7thAnniversary4.jpeg","/assets/7thAnniversary5.jpeg"]
+    },
+    {
+      "label": "Annual Events",
+      "title": "Office Inauguration 2024",
+      "images": ["/assets/Inauguration1.jpeg", "/assets/Inauguration2.jpeg", "/assets/Inauguration3.jpeg","/assets/Inauguration4.jpeg","/assets/Inauguration5.jpeg","/assets/Inauguration6.jpeg"]
+    },
+    {
+      "label": "Annual Events",
+      "title": "Women’s Day Celebration 2024",
+      "images": ["/assets/Women’sDay1.jpeg", "/assets/Women’sDay2.jpeg", "/assets/Women’sDay3.jpeg","/assets/Women’sDay4.jpeg","/assets/Women’sDay5.jpeg"]
+    },
+    {
+      "label": "Annual Events",
+      "title": "5th Anniversary 2022",
+      "images": ["/assets/5thAnniversary1.jpg", "/assets/5thAnniversary2.jpg", "/assets/5thAnniversary3.jpg","/assets/5thAnniversary4.jpg"]
+    }
+  ]
+  

@@ -16,7 +16,7 @@ export default function Footer() {
       className="text-white bg-cover bg-center bg-no-repeat bg-black"
       style={{ backgroundImage: "url('/assets/footerbg.png')" }}
     >
-      <div className="sm:ml-20 ml-4 mx-auto  py-12 grid grid-cols-2  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="sm:ml-20 ml-4 mx-auto py-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Column 1 - Services */}
         <div>
           <h2 className="text-2xl font-bold mb-4 border-b-2 inline-block border-white">Services</h2>
@@ -74,9 +74,9 @@ export default function Footer() {
             </div>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-[#FEC63F]" />
-              <a href="mailto:info@vm3techsolution.com" className=" text-sm text-gray-300">
+              <Link href="mailto:info@vm3techsolution.com" className="text-sm text-gray-300">
                 info@vm3techsolution.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,23 +92,22 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex sm:space-x-4 space-x-1 pt-4 text-2xl">
-              <a href="https://www.linkedin.com/company/vm3techsolutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaLinkedin /></a>
-              <a href="https://www.facebook.com/vm3techsolutions" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500"><FaFacebook /></a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500"><FaYoutube /></a>
-              <a href="https://www.instagram.com/vm3techsolutions" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400"><FaInstagram /></a>
-              <a href="https://twitter.com/vm3tech" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300"><FaTwitter /></a>
+              <Link href="https://www.linkedin.com/company/vm3techsolutions" target="_blank" className="hover:text-blue-400"><FaLinkedin /></Link>
+              <Link href="https://www.facebook.com/vm3techsolutions" target="_blank" className="hover:text-blue-500"><FaFacebook /></Link>
+              <Link href="https://www.youtube.com" target="_blank" className="hover:text-red-500"><FaYoutube /></Link>
+              <Link href="https://www.instagram.com/vm3techsolutions" target="_blank" className="hover:text-pink-400"><FaInstagram /></Link>
+              <Link href="https://twitter.com/vm3tech" target="_blank" className="hover:text-blue-300"><FaTwitter /></Link>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="text-center py-4  border-t-2 border-gray-400 text-md text-gray-300">
+      <div className="text-center py-4 border-t-2 border-gray-400 text-md text-gray-300">
         © Copyright 2024 by{" "}
-        <Link href="https://vm3techsolution.com/" className="text-orange-400 font-semibold ">
-  VM3 Tech Solutions LLP
-</Link>
-
+        <Link href="https://vm3techsolution.com/" className="text-orange-400 font-semibold" target="_blank">
+          VM3 Tech Solutions LLP
+        </Link>
       </div>
     </footer>
   );
