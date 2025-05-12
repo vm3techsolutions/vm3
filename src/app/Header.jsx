@@ -23,7 +23,7 @@ export default function Header() {
     {
       title: 'Services',
       dropdown: [
-        { title: 'UI/UX', path: '/services/ui-ux' },
+        { title: 'UI/UX', path: '/UI-UX' },
         {
           title: 'Software Development',
           path: '/services/software-development',
