@@ -22,8 +22,8 @@ export default function Footer() {
           <h2 className="text-2xl font-bold mb-4 border-b-2 inline-block border-white">Services</h2>
           <ul className="space-y-2 mt-4 text-gray-300">
             {[
-              { label: "UI/UX", link: "/services/ui-ux" },
-              { label: "Software Development", link: "/services/software-development" },
+              { label: "UI/UX", link: "/UI-UX" },
+              { label: "Software Development", link: "/WebDesignDevelopment" },
               { label: "Cloud Solutions", link: "/services/cloud-solutions" },
               { label: "Digital Marketing", link: "/services/digital-marketing" },
               { label: "Business Consulting", link: "/services/business-consulting" }
@@ -43,11 +43,11 @@ export default function Footer() {
           <h2 className="text-2xl font-bold mb-4 border-b-2 inline-block border-white">Quick Links</h2>
           <ul className="space-y-2 mt-4 text-gray-300">
             {[
-              { label: "About VM3", link: "/about" },
-              { label: "Products", link: "/products" },
-              { label: "Career", link: "/career" },
-              { label: "Case Study", link: "/case-study" },
-              { label: "Contact Us", link: "/contact" }
+              { label: "About VM3", link: "/Our-Story" },
+              { label: "Products", link: "/Products" },
+              { label: "Career", link: "/Career" },
+              { label: "Case Study", link: "/Case-Study" },
+              { label: "Contact Us", link: "/Contact" }
             ].map((item) => (
               <li key={item.label} className="flex items-center space-x-2">
                 <span className="text-[#FEC63F]">➜</span>

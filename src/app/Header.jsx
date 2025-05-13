@@ -45,9 +45,9 @@ export default function Header() {
           title: 'Digital Marketing',
           path: '/services/marketing',
           subDropdown: [
-            { title: 'Brand Positioning', path: '/services/marketing/seo' },
-            { title: 'Online Marketing', path: '/services/marketing/smm' },
-            { title: 'Employer Branding', path: '/services/marketing/email' },
+            { title: 'Brand Positioning', path: '/BrandPositioning' },
+            { title: 'Online Marketing', path: '/OnlineMarketing' },
+            { title: 'Employer Branding', path: '/EmployerBranding' },
           ],
         },
         { title: 'Business Consulting', path: '/services/consulting' },
