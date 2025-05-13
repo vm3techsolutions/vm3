@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full sm:h-[100vh] h-[70vh] overflow-hidden">
+    <div className="relative w-full sm:h-[85vh] h-[70vh] overflow-hidden">
       {/* Background Image */}
        <Image
-              src="/assets/homebanner.jpg"
+              src="/assets/BannerBG.jpg"
               alt="Business Woman"
               fill
               className="object-cover z-0"

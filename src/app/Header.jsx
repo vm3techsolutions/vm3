@@ -28,17 +28,17 @@ export default function Header() {
           title: 'Software Development',
           path: '/services/software-development',
           subDropdown: [
-            { title: 'Web Design & Development', path: '/services/software-development/web-apps' },
-            { title: 'Quality Assurance & Testing', path: '/services/software-development/mobile-apps' },
+            { title: 'Web Design & Development', path: '/WebDesignDevelopment' },
+            { title: 'Quality Assurance & Testing', path: '/QualityAssurance' },
           ],
         },
         {
           title: 'Cloud Solutions',
           path: '/services/cloud',
           subDropdown: [
-            { title: 'DevOps & CI/CD Pipeline', path: '/services/cloud/devops' },
-            { title: 'Hosting (EC2 + VM)', path: '/services/cloud/hosting' },
-            { title: 'Serverless Computing S3', path: '/services/cloud/s3' },
+            { title: 'DevOps & CI/CD Pipeline', path: '/DevOps&CI' },
+            { title: 'Hosting (EC2 + VM)', path: '/Hosting' },
+            { title: 'Serverless Computing S3', path: '/ServerlessComputing' },
           ],
         },
         {
