@@ -26,7 +26,7 @@ export default function Header() {
         { title: 'UI/UX', path: '/UI-UX' },
         {
           title: 'Software Development',
-          path: '/services/software-development',
+          path: '/SoftwareDevelopment',
           subDropdown: [
             { title: 'Web Design & Development', path: '/WebDesignDevelopment' },
             { title: 'Quality Assurance & Testing', path: '/QualityAssurance' },
@@ -34,7 +34,7 @@ export default function Header() {
         },
         {
           title: 'Cloud Solutions',
-          path: '/services/cloud',
+          path: '/CloudSolutions',
           subDropdown: [
             { title: 'DevOps & CI/CD Pipeline', path: '/DevOps&CI' },
             { title: 'Hosting (EC2 + VM)', path: '/Hosting' },
@@ -43,14 +43,14 @@ export default function Header() {
         },
         {
           title: 'Digital Marketing',
-          path: '/services/marketing',
+          path: '/DigitalMarketing',
           subDropdown: [
             { title: 'Brand Positioning', path: '/BrandPositioning' },
             { title: 'Online Marketing', path: '/OnlineMarketing' },
             { title: 'Employer Branding', path: '/EmployerBranding' },
           ],
         },
-        { title: 'Business Consulting', path: '/services/consulting' },
+        { title: 'Business Consulting', path: '/BussnessConsulting' },
       ],
     },
     {

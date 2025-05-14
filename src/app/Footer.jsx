@@ -23,10 +23,10 @@ export default function Footer() {
           <ul className="space-y-2 mt-4 text-gray-300">
             {[
               { label: "UI/UX", link: "/UI-UX" },
-              { label: "Software Development", link: "/WebDesignDevelopment" },
-              { label: "Cloud Solutions", link: "/services/cloud-solutions" },
-              { label: "Digital Marketing", link: "/services/digital-marketing" },
-              { label: "Business Consulting", link: "/services/business-consulting" }
+              { label: "Software Development", link: "/SoftwareDevelopment" },
+              { label: "Cloud Solutions", link: "/CloudSolutions" },
+              { label: "Digital Marketing", link: "/DigitalMarketing" },
+              { label: "Business Consulting", link: "/BussnessConsulting" }
             ].map((item) => (
               <li key={item.label} className="flex items-center space-x-2">
                 <span className="text-yellow-400">➜</span>
