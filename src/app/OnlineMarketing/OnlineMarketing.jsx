@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
        We are your trusted partner for seamless product listing on different prominent marketplaces. With our comprehensive service and team of experts, we assist you to register your brand and showcase your products effectively. i.e. Google, Flipkart, Meesho Amazon, Swiggy, Zomato, Snapdeal and Facebook Catalog. Our expert team works tirelessly to ensure your products reach a wide audience maximizing your online visibility and boosting sales.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

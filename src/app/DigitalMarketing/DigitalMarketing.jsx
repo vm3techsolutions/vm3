@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
  We offers comprehensive Social Media Solutions designed to increase brand visibility, engage target audiences, and drive measurable business growth. In today’s digital-first world, a strong social media presence is essential for building trust and connecting with customers. Our services cover everything from strategy and content creation to engagement and analytics, empowering your brand to shine across social platforms.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

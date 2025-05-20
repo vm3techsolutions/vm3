@@ -23,7 +23,7 @@ export default function HeroSection() {
           Empowering<br /> Businesses with <br /> Tailored Software Solutions
         </h1>
 
-        <Link href="/get-started">
+        <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Get Started
           </button>

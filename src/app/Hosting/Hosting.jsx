@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
          We empower your business with cutting-edge cloud hosting services leveraging Amazon EC2 and Virtual Machines (VMs). Whether you’re looking to migrate to the cloud, optimize infrastructure, or deploy secure and scalable applications, our tailored solutions ensure your business thrives in today’s digital landscape.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

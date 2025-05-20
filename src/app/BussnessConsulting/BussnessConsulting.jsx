@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
    Our Business Consulting services provide strategic insights and customized solutions to help businesses unlock their full potential. Whether you are aiming to enhance efficiency, drive innovation, or scale operations, our consulting team brings a wealth of industry expertise to identify challenges and implement transformative changes that create lasting value.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

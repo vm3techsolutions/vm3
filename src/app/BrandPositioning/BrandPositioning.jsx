@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
         Our Brand Positioning services help your business create a distinctive identity in a competitive market. With strategic insights and creative execution, we ensure your brand resonates with your target audience and drives strong connections.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

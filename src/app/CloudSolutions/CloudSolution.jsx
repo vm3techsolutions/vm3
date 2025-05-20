@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
  We offers end-to-end Cloud Solutions to help businesses streamline operations, reduce infrastructure costs, and scale seamlessly. By leveraging powerful platforms like AWS and Azure, we enable your business to stay agile, secure, and efficient in a competitive digital landscape. From cloud hosting and serverless computing to DevOps and CI/CD pipeline setups, our solutions are tailored to drive your cloud transformation.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

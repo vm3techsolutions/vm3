@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
          We ensure your software is free from bugs, secure, and performs seamlessly under any circumstance. Our robust Quality Assurance (QA) and Testing services guarantee that your applications meet the highest industry standards and provide an exceptional user experience.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

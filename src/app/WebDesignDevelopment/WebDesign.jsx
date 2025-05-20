@@ -16,7 +16,7 @@ export default function UIUXSection() {
          Your website is arguably your most important marketing asset, and if it isn’t growing your business, it’s time for a new one. We not only design and develop a Website.
 We develop Business Growth.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

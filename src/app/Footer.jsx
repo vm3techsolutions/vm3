@@ -94,7 +94,7 @@ export default function Footer() {
             <div className="flex sm:space-x-4 space-x-1 pt-4 text-2xl">
               <Link href="https://www.linkedin.com/company/vm3techsolutions" target="_blank" className="hover:text-blue-400"><FaLinkedin /></Link>
               <Link href="https://www.facebook.com/vm3techsolutions" target="_blank" className="hover:text-blue-500"><FaFacebook /></Link>
-              <Link href="https://www.youtube.com" target="_blank" className="hover:text-red-500"><FaYoutube /></Link>
+              <Link href="https://www.youtube.com/channel/UCiER8PazbQ_ArgBYTOhY4Lw" target="_blank" className="hover:text-red-500"><FaYoutube /></Link>
               <Link href="https://www.instagram.com/vm3techsolutions" target="_blank" className="hover:text-pink-400"><FaInstagram /></Link>
               <Link href="https://twitter.com/vm3tech" target="_blank" className="hover:text-blue-300"><FaTwitter /></Link>
             </div>

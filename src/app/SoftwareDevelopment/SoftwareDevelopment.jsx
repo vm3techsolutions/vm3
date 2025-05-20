@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
   Our Software Development service is designed to bring your digital vision to life with robust, scalable, and user-focused solutions. Whether you're looking for a new website, mobile app, or complex software system, we build each product with precision, ensuring it aligns with your business goals and enhances user engagement.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

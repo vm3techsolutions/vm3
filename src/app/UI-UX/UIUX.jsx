@@ -19,7 +19,7 @@ export default function UIUXSection() {
           research to interactive prototypes and final interfaces, we craft each element to reflect
           your brand&apos;s essence and elevate user satisfaction.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

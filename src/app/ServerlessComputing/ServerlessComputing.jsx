@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
         We offers next-generation serverless computing solutions using AWS Lambda and Amazon S3. Our approach eliminates the need to manage servers, allowing you to focus on building and scaling applications effortlessly. Whether it’s running event-driven tasks or securely storing and delivering data, our solutions are designed to optimize efficiency and reduce costs.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>

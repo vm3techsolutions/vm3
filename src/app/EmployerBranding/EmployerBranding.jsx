@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <p className="text-xl  text-gray-700">
     We are pioneer of Employer Branding building a strong reputation between employer & internal staff and external job seekers. Employer branding is one of the most important components in Employee engagement strategies. We helps to build a reputation for yourself, your company, products & services.
         </p>
-       <Link href="/get-started">
+       <Link href="/Contact">
           <button className="bg-[#FEC63F]  text-black font-bold px-5 text-xl py-3 rounded-md w-fit transition border-l-14 border-yellow-600">
             Enquire now
           </button>
