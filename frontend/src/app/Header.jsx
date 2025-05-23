@@ -67,6 +67,10 @@ export default function Header() {
       ],
     },
     {
+      title: 'New Product',
+      path: '/NewProducts',
+    },
+    {
       title: 'Career',
       path: '/Career',
     },
