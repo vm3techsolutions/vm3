@@ -38,6 +38,22 @@ const Products = () => {
             View Plan
           </Link>
         </div>
+
+         {/* SEO Plans*/}
+        <div className="bg-gradient-to-br from-gray-800 to-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+          <h2 className="text-2xl font-bold mb-4 text-yellow-400">
+            SEO
+          </h2>
+          <p className="text-gray-300 mb-6">
+            Choose between our Starter or Business plan for your website needs.
+          </p>
+          <Link
+            href="/SeoPlans"
+            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-yellow-400/40 transition duration-300"
+          >
+            View Plan
+          </Link>
+        </div>
       </div>
     </div>
   );

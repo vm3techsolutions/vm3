@@ -77,45 +77,43 @@ const plans = [
 
 export default function WebsitePlans() {
   return (
-    <div className="width-[100%] bg-white text-black py-12 px-4">
+    <div className="w-full bg-white text-black py-12 px-4">
       <h1 className="text-3xl font-bold text-center mb-10 text-[#EDBA3C]">
         Website Development Packages
       </h1>
 
-      <div className=" hide-scrollbar">
-        <div className="flex gap-6 min-w-fit px-2">
-          {plans.map((plan, index) => (
-            <div
-  key={index}
-  className="bg-black text-white rounded-2xl p-6 w-[270px] flex-shrink-0 border"
-  style={{ borderColor: '#EDBA3C' }}
->
-              <h2 className="text-xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
-              <p className="text-sm text-gray-400 mb-2">{plan.type}</p>
-              <p className="text-sm mb-2">Pages: <strong>{plan.pages}</strong></p>
-              <ul className="mb-4 space-y-1 text-sm">
-                {plan.features.map((feature, i) => (
-                  <li key={i}>✔ {feature}</li>
+      <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-16 px-20">
+        {plans.map((plan, index) => (
+          <div
+            key={index}
+            className="bg-black text-white rounded-2xl p-6 w-full md:w-[300px] border"
+            style={{ borderColor: '#EDBA3C' }}
+          >
+            <h2 className="text-xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
+            <p className="text-sm text-gray-400 mb-2">{plan.type}</p>
+            <p className="text-sm mb-2">Pages: <strong>{plan.pages}</strong></p>
+            <ul className="mb-4 space-y-1 text-sm">
+              {plan.features.map((feature, i) => (
+                <li key={i}>✔ {feature}</li>
+              ))}
+            </ul>
+            <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">{plan.price}</div>
+            <div className="mb-2">
+              <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
+              <ul className="text-sm list-disc list-inside text-gray-300">
+                {plan.addons.map((addon, j) => (
+                  <li key={j}>{addon}</li>
                 ))}
               </ul>
-              <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">{plan.price}</div>
-              <div className="mb-2">
-                <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
-                <ul className="text-sm list-disc list-inside text-gray-300">
-                  {plan.addons.map((addon, j) => (
-                    <li key={j}>{addon}</li>
-                  ))}
-                </ul>
-              </div>
-              <button
-                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition"
-                style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
-              >
-                Get Started
-              </button>
             </div>
-          ))}
-        </div>
+            <button
+              className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition"
+              style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+            >
+              Get Started
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );
