@@ -256,7 +256,7 @@ function SocialPlanCard({ plan }) {
 
         {(plan.name === "Half-Yearly Plan" || plan.name === "Yearly Plan") && (
           <p className="text-sm font-semibold text-green-600 mb-2">
-            🎉 10% Discount Applied!
+           
           </p>
         )}
 

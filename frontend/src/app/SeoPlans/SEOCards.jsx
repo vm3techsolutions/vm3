@@ -72,52 +72,67 @@ export default function SEOCards() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4">
+    <div className="relative w-full py-12 px-4 text-white">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{ backgroundImage: "url('/assets/Verticle.jpg')" }} // replace with your actual image path
+      />
 
-         <h1 className="text-4xl font-extrabold text-center mb-12 text-black drop-shadow">
-       SEO Packages
-      </h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {seoPlans.map((plan, planIndex) => (
-          <div key={planIndex} className="bg-white shadow-md rounded-2xl p-6 border-2 border-blue-200">
-            <h2 className="text-2xl font-bold mb-1 text-[#3B82F6]">{plan.name}</h2>
-            <ul className="mb-4 space-y-1 text-gray-700 text-sm">
-              {plan.features.map((feature, i) => (
-                <li key={i}>✔ {feature}</li>
-              ))}
-            </ul>
-            <div className="text-lg font-semibold mb-2 text-[#3B82F6]">
-              ₹{calculateTotal(planIndex).toLocaleString()}/month
-            </div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0  z-0" />
 
-            <div className="mb-3">
-              <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                {plan.addons.map((addon, addonIndex) => {
-                  const checkboxId = `addon-${planIndex}-${addonIndex}`;
-                  return (
-                    <li key={addonIndex} className="flex items-center">
-                      <input
-                        type="checkbox"
-                        id={checkboxId}
-                        className="mr-2"
-                        checked={selectedAddons[planIndex]?.includes(addonIndex) || false}
-                        onChange={() => toggleAddon(planIndex, addonIndex)}
-                      />
-                      <label htmlFor={checkboxId}>
-                        {addon.name} (+₹{addon.price})
-                      </label>
-                    </li>
-                  );
-                })}
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-center mb-12 text-[#EDBA3C] drop-shadow">
+          SEO Packages
+        </h1>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {seoPlans.map((plan, planIndex) => (
+            <div key={planIndex} className="bg-black text-white shadow-md rounded-2xl p-6 border border-[#EDBA3C]">
+              <h2 className="text-2xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
+              <ul className="mb-4 space-y-1 text-gray-300 text-sm">
+                {plan.features.map((feature, i) => (
+                  <li key={i}>✔ {feature}</li>
+                ))}
               </ul>
-            </div>
+              <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">
+                ₹{calculateTotal(planIndex).toLocaleString()}/month
+              </div>
 
-            <button className="mt-4 w-full bg-[#593249] text-white py-2 rounded-xl hover:bg-[#402439] transition">
-              Select Plan
-            </button>
-          </div>
-        ))}
+              <div className="mb-3">
+                <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
+                <ul className="text-sm text-gray-300 space-y-1">
+                  {plan.addons.map((addon, addonIndex) => {
+                    const checkboxId = `addon-${planIndex}-${addonIndex}`;
+                    return (
+                      <li key={addonIndex} className="flex items-center">
+                        <input
+                          type="checkbox"
+                          id={checkboxId}
+                          className="mr-2"
+                          checked={selectedAddons[planIndex]?.includes(addonIndex) || false}
+                          onChange={() => toggleAddon(planIndex, addonIndex)}
+                        />
+                        <label htmlFor={checkboxId}>
+                          {addon.name} (+₹{addon.price})
+                        </label>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
+              <button
+                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition"
+                style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+              >
+                Select Plan
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
