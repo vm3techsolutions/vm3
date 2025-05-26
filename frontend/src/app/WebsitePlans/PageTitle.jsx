@@ -19,9 +19,9 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center text-white px-8 sm:px-16 md:px-24">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Social Media Plans</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Website Development Plans</h1>
         <p className="text-lg">
-          <Link href="/" className="hover:underline text-white">Home</Link> <span className="text-orange-400">» Social Media Plans</span>
+          <Link href="/" className="hover:underline text-white">Home</Link> <span className="text-orange-400">» Website Development Plans</span>
         </p>
       </div>
     </div>
