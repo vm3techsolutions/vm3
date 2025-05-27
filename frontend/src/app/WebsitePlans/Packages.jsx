@@ -1,6 +1,6 @@
 'use client';
 
-import React from "react";
+import React, { useState } from 'react';
 
 const plans = [
   {
@@ -15,7 +15,11 @@ const plans = [
       "1 Update/month"
     ],
     price: "₹1,499",
-    addons: ["Domain & Hosting", "Logo Design"]
+    basePrice: 1499,
+    addons: [
+      { name: "Domain & Hosting", price: 500 },
+      { name: "Logo Design", price: 300 }
+    ]
   },
   {
     name: "Business Plan",
@@ -29,7 +33,12 @@ const plans = [
       "2 Updates/month"
     ],
     price: "₹2,999",
-    addons: ["SEO (10 Keywords)", "Google My Business", "Social Media Setup"]
+    basePrice: 2999,
+    addons: [
+      { name: "SEO (10 Keywords)", price: 600 },
+      { name: "Google My Business", price: 400 },
+      { name: "Social Media Setup", price: 300 }
+    ]
   },
   {
     name: "E-commerce Plan",
@@ -43,7 +52,12 @@ const plans = [
       "2 Updates/month"
     ],
     price: "₹5,499",
-    addons: ["Product Upload Support", "WhatsApp Business API", "Facebook/Instagram Shop"]
+    basePrice: 5499,
+    addons: [
+      { name: "Product Upload Support", price: 800 },
+      { name: "WhatsApp Business API", price: 500 },
+      { name: "Facebook/Instagram Shop", price: 700 }
+    ]
   },
   {
     name: "Growth Plan",
@@ -57,7 +71,12 @@ const plans = [
       "3 Updates/month"
     ],
     price: "₹9,999",
-    addons: ["SEO Audit + Execution", "Blog Writing", "Monthly Analytics Report"]
+    basePrice: 9999,
+    addons: [
+      { name: "SEO Audit + Execution", price: 1000 },
+      { name: "Blog Writing", price: 700 },
+      { name: "Monthly Analytics Report", price: 500 }
+    ]
   },
   {
     name: "Enterprise Plan",
@@ -71,26 +90,49 @@ const plans = [
       "Priority Support"
     ],
     price: "Custom Quote",
-    addons: ["Dedicated Hosting", "DevOps Support", "Custom Integrations (ERP/CRM)"]
+    basePrice: 0,
+    addons: [
+      { name: "Dedicated Hosting", price: 2000 },
+      { name: "DevOps Support", price: 1500 },
+      { name: "Custom Integrations (ERP/CRM)", price: 2500 }
+    ]
   }
 ];
 
 export default function WebsitePlans() {
+  const [selectedAddons, setSelectedAddons] = useState({});
+
+  const toggleAddon = (planIndex, addonIndex) => {
+    setSelectedAddons(prev => {
+      const selected = prev[planIndex] || [];
+      if (selected.includes(addonIndex)) {
+        return { ...prev, [planIndex]: selected.filter(i => i !== addonIndex) };
+      } else {
+        return { ...prev, [planIndex]: [...selected, addonIndex] };
+      }
+    });
+  };
+
+  const calculateTotal = (planIndex) => {
+    const plan = plans[planIndex];
+    const addons = selectedAddons[planIndex] || [];
+    const addonTotal = addons.reduce((sum, i) => sum + plan.addons[i].price, 0);
+    return plan.basePrice + addonTotal;
+  };
+
   return (
     <div className="relative w-full py-12 px-4 text-white">
-      {/* Background Image */}
-      
       {/* Content */}
       <div className="relative z-10">
         <h1 className="text-4xl font-extrabold text-center mb-10 text-black">
           Website Development Packages
         </h1>
 
-        <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-16 px-4 md:px-20">
-          {plans.map((plan, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {plans.map((plan, planIndex) => (
             <div
-              key={index}
-              className=" text-black rounded-2xl p-6 w-full md:w-[300px] border transition hover:shadow-xl hover:scale-[1.02] duration-200 relative"
+              key={planIndex}
+              className="text-black rounded-2xl p-6 w-full md:w-[300px] border transition hover:shadow-xl hover:scale-[1.02] duration-200 relative"
               style={{ borderColor: '#EDBA3C' }}
             >
               <h2 className="text-xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
@@ -101,18 +143,36 @@ export default function WebsitePlans() {
                   <li key={i}>✔ {feature}</li>
                 ))}
               </ul>
-              <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">{plan.price}</div>
+
+              <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">
+                {plan.basePrice > 0 ? `₹${calculateTotal(planIndex).toLocaleString()}` : "Custom Quote"}
+              </div>
+
               <div className="mb-2">
                 <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
-                <ul className="text-sm list-disc list-inside text-gray-900">
-                  {plan.addons.map((addon, j) => (
-                    <li key={j}>{addon}</li>
-                  ))}
+                <ul className="text-sm text-gray-900 space-y-1">
+                  {plan.addons.map((addon, addonIndex) => {
+                    const checkboxId = `web-addon-${planIndex}-${addonIndex}`;
+                    return (
+                      <li key={addonIndex} className="flex items-center">
+                        <input
+                          type="checkbox"
+                          id={checkboxId}
+                          className="mr-2"
+                          checked={selectedAddons[planIndex]?.includes(addonIndex) || false}
+                          onChange={() => toggleAddon(planIndex, addonIndex)}
+                        />
+                        <label htmlFor={checkboxId}>
+                          {addon.name} (+₹{addon.price})
+                        </label>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
+
               <button
-                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition  bg-black hover:bg-[#EDBA3C] text-white"
-                // style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition bg-black hover:bg-[#EDBA3C] text-white"
               >
                 Get Started
               </button>

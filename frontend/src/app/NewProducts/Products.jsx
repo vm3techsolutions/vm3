@@ -59,6 +59,20 @@ const Products = () => {
               View Plan
             </Link>
           </div>
+
+           {/* Digital Marketing */}
+          <div className="bg-black/40 bg-opacity-30 rounded-xl p-6 text-left transition hover:shadow-xl hover:scale-[1.02] duration-200 relative">
+            <h2 className="text-2xl font-bold mb-4 text-red-400">Digital Marketing Ads</h2>
+            <p className="text-white mb-6">
+              Choose between our Starter or Business plan for your website needs.
+            </p>
+            <Link
+              href="/DigitalMarketingAds"
+              className="inline-block bg-red-500 hover:bg-red-600 text-white hover:text-black font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-yellow-400/40 transition duration-300"
+            >
+              View Plan
+            </Link>
+          </div>
         </div>
       </div>
     </section>
