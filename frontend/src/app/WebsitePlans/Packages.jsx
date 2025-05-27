@@ -79,17 +79,10 @@ export default function WebsitePlans() {
   return (
     <div className="relative w-full py-12 px-4 text-white">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/assets/Verticle.jpg')" }}
-      />
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 z-0" />
-
+      
       {/* Content */}
       <div className="relative z-10">
-        <h1 className="text-3xl font-bold text-center mb-10 text-[#EDBA3C]">
+        <h1 className="text-4xl font-extrabold text-center mb-10 text-black">
           Website Development Packages
         </h1>
 
@@ -97,11 +90,11 @@ export default function WebsitePlans() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-black text-white rounded-2xl p-6 w-full md:w-[300px] border"
+              className=" text-black rounded-2xl p-6 w-full md:w-[300px] border transition hover:shadow-xl hover:scale-[1.02] duration-200 relative"
               style={{ borderColor: '#EDBA3C' }}
             >
               <h2 className="text-xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
-              <p className="text-sm text-gray-400 mb-2">{plan.type}</p>
+              <p className="text-sm text-gray-900 mb-2">{plan.type}</p>
               <p className="text-sm mb-2">Pages: <strong>{plan.pages}</strong></p>
               <ul className="mb-4 space-y-1 text-sm">
                 {plan.features.map((feature, i) => (
@@ -111,15 +104,15 @@ export default function WebsitePlans() {
               <div className="text-lg font-semibold mb-2 text-[#EDBA3C]">{plan.price}</div>
               <div className="mb-2">
                 <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
-                <ul className="text-sm list-disc list-inside text-gray-300">
+                <ul className="text-sm list-disc list-inside text-gray-900">
                   {plan.addons.map((addon, j) => (
                     <li key={j}>{addon}</li>
                   ))}
                 </ul>
               </div>
               <button
-                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition"
-                style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition  bg-black hover:bg-[#EDBA3C] text-white"
+                // style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
               >
                 Get Started
               </button>

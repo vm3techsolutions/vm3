@@ -74,25 +74,19 @@ export default function SEOCards() {
   return (
     <div className="relative w-full py-12 px-4 text-white">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/assets/Verticle.jpg')" }} // replace with your actual image path
-      />
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0  z-0" />
+    
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-center mb-12 text-[#EDBA3C] drop-shadow">
+        <h1 className="text-4xl font-extrabold text-center mb-12 text-black drop-shadow">
           SEO Packages
         </h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {seoPlans.map((plan, planIndex) => (
-            <div key={planIndex} className="bg-black text-white shadow-md rounded-2xl p-6 border border-[#EDBA3C]">
+            <div key={planIndex} className=" text-black shadow-md rounded-2xl p-6 border border-[#EDBA3C] transition hover:shadow-xl hover:scale-[1.02] duration-200 relative">
               <h2 className="text-2xl font-bold mb-1 text-[#EDBA3C]">{plan.name}</h2>
-              <ul className="mb-4 space-y-1 text-gray-300 text-sm">
+              <ul className="mb-4 space-y-1 text-gray-900 text-sm">
                 {plan.features.map((feature, i) => (
                   <li key={i}>✔ {feature}</li>
                 ))}
@@ -103,7 +97,7 @@ export default function SEOCards() {
 
               <div className="mb-3">
                 <p className="font-medium text-sm mb-1">Recommended Add-ons:</p>
-                <ul className="text-sm text-gray-300 space-y-1">
+                <ul className="text-sm text-gray-900 space-y-1">
                   {plan.addons.map((addon, addonIndex) => {
                     const checkboxId = `addon-${planIndex}-${addonIndex}`;
                     return (
@@ -125,8 +119,8 @@ export default function SEOCards() {
               </div>
 
               <button
-                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition"
-                style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+                className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition bg-black hover:bg-[#EDBA3C] text-white"
+                // style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
               >
                 Select Plan
               </button>
