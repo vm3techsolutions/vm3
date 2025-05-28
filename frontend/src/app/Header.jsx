@@ -78,6 +78,10 @@ export default function Header() {
       title: 'Contact Us',
       path: '/Contact',
     },
+    {
+      title: 'Login',
+      path: '/Login',
+    },
   ];
 
   return (
