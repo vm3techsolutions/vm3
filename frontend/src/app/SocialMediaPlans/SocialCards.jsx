@@ -176,11 +176,11 @@ import React, { useState } from "react";
 
 const baseProductPrice = 3000;
 const platformHandlingCharge = 3000;
-const postRate = 300;
-const blogRate = 600;
-const caseRate = 600;
-const jobPostRate = 600;
-const videoReelRate = 600;
+const postRate = 500;
+const blogRate = 1000;
+const caseRate = 1000;
+const jobPostRate = 500;
+const videoReelRate = 1000;
 
 const socialPlans = [
   { name: "Monthly Plan", duration: "1 Month", multiplier: 1 },
@@ -216,8 +216,11 @@ function SocialPlanCard({ plan }) {
 
   const calculatePrice = () => {
     const total = calculateOriginalPrice();
-    if (plan.name === "Half-Yearly Plan" || plan.name === "Yearly Plan") {
-      return total * 0.9; // Apply 10% discount
+    if (plan.name === "Yearly Plan") {
+      return total * 0.9; // 10% off
+    }
+    if (plan.name === "Half-Yearly Plan") {
+      return total * 0.95; // 5% off
     }
     return total;
   };
@@ -244,7 +247,12 @@ function SocialPlanCard({ plan }) {
   return (
     <div className="bg-white rounded-2xl shadow-md border border-[#EDBA3C] flex flex-col justify-between p-6 w-full transition hover:shadow-xl hover:scale-[1.02] duration-200 relative">
       {/* Optional ribbon badge */}
-      {(plan.name === "Half-Yearly Plan" || plan.name === "Yearly Plan") && (
+      {(plan.name === "Half-Yearly Plan" ) && (
+        <div className="absolute top-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-bl-lg font-semibold">
+          5% OFF
+        </div>
+      )}
+      {(plan.name === "Yearly Plan") && (
         <div className="absolute top-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-bl-lg font-semibold">
           10% OFF
         </div>
