@@ -65,7 +65,7 @@ function DigitalAdCard({ plan }) {
   const calculatePrice = () =>
     (baseProductPrice +
       selectedPlatforms.length * adPlatformCharge +
-      (totalAdSpend + monthlyBudget) * adSpendMultiplier) *
+      monthlyBudget * adSpendMultiplier) *
     plan.multiplier;
 
   const handleGetStarted = () => {

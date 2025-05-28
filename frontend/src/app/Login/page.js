@@ -7,5 +7,6 @@ export default function(){
             <Login/>
             <SignUp/>
         </div>
+        
     )
 }
