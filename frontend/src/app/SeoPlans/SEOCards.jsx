@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const seoPlans = [
   {
@@ -53,6 +53,19 @@ const seoPlans = [
 export default function SEOCards() {
   const [selectedAddons, setSelectedAddons] = useState({});
 
+  useEffect(() => {
+    // Load Razorpay checkout script dynamically
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Cleanup script on unmount if needed
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const toggleAddon = (planIndex, addonIndex) => {
     setSelectedAddons(prev => {
       const selected = prev[planIndex] || [];
@@ -71,12 +84,72 @@ export default function SEOCards() {
     return plan.basePrice + addonTotal;
   };
 
+  const handlePayment = async (planIndex) => {
+    try {
+      const plan = seoPlans[planIndex];
+      const addons = selectedAddons[planIndex] || [];
+      const totalAmount = calculateTotal(planIndex);
+
+      // Convert to paise for Razorpay (multiply by 100)
+      const amountInPaise = totalAmount * 100;
+
+      const res = await fetch('/api/create-order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          amount: amountInPaise,
+          planName: plan.name,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to create order');
+      }
+
+      const order = await res.json();
+
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY,
+        amount: order.amount,
+        currency: 'INR',
+        name: 'Your Company Name',
+        description: `SEO Plan: ${plan.name}`,
+        order_id: order.id,
+        handler: function (response) {
+          alert('Payment Successful!');
+          console.log(response);
+        },
+        prefill: {
+          name: 'Your Name',
+          email: 'you@example.com',
+        },
+        notes: {
+          plan: plan.name,
+          addons: addons.map(i => plan.addons[i].name).join(', '),
+        },
+        theme: {
+          color: '#EDBA3C',
+        }
+      };
+
+      if (!window.Razorpay) {
+        alert('Razorpay SDK not loaded. Please try again later.');
+        return;
+      }
+
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+
+    } catch (error) {
+      console.error('Payment error:', error);
+      alert('Something went wrong during payment. Please try again.');
+    }
+  };
+
   return (
     <div className="relative w-full py-12 px-4 text-white">
-      {/* Background Image */}
-    
-
-      {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto">
         <h1 className="text-4xl font-extrabold text-center mb-12 text-black drop-shadow">
           SEO Packages
@@ -120,7 +193,7 @@ export default function SEOCards() {
 
               <button
                 className="mt-4 w-full py-2 rounded-xl font-semibold hover:opacity-90 transition bg-black hover:bg-[#EDBA3C] text-white"
-                // style={{ backgroundColor: '#EDBA3C', color: '#1a1a1a' }}
+                onClick={() => handlePayment(planIndex)}
               >
                 Select Plan
               </button>
