@@ -226,23 +226,42 @@ function SocialPlanCard({ plan }) {
   };
 
   const router = useRouter();
+  // const handleClick = () => {
+  //   router.push({
+  //     pathname: "/checkout",
+  //     query: {
+  //       plan: plan.name,
+  //       duration: plan.duration,
+  //       multiplier: plan.multiplier,
+  //       platforms: selectedPlatforms.join(","),
+  //       posts,
+  //       blogs,
+  //       caseStudies,
+  //       videoReels,
+  //       jobPosts,
+  //       total: calculatePrice(),
+  //     },
+  //   });
+  // };
+
   const handleClick = () => {
-    router.push({
-      pathname: "/checkout",
-      query: {
-        plan: plan.name,
-        duration: plan.duration,
-        multiplier: plan.multiplier,
-        platforms: selectedPlatforms.join(","),
-        posts,
-        blogs,
-        caseStudies,
-        videoReels,
-        jobPosts,
-        total: calculatePrice(),
-      },
-    });
-  };
+  const queryParams = new URLSearchParams({
+    plan: plan.name,
+    duration: plan.duration,
+    multiplier: plan.multiplier.toString(),
+    platforms: selectedPlatforms.join(","),
+    posts: posts.toString(),
+    blogs: blogs.toString(),
+    caseStudies: caseStudies.toString(),
+    videoReels: videoReels.toString(),
+    jobPosts: jobPosts.toString(),
+    total: calculatePrice().toString(),
+    baseProductPrice: baseProductPrice.toString(),
+    serviceName: "Social Media Marketing",
+  });
+
+  router.push(`/Payment?${queryParams.toString()}`);
+};
 
   return (
     <div className="bg-white rounded-2xl shadow-md border border-[#EDBA3C] flex flex-col justify-between p-6 w-full transition hover:shadow-xl hover:scale-[1.02] duration-200 relative">
