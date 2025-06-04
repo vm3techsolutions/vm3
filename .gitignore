@@ -33,6 +33,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 frontend/.env*
+backend/.env*
 
 # vercel
 .vercel
@@ -40,3 +41,4 @@ frontend/.env*
 # typescript
 *.tsbuildinfo
 frontend/next-env.d.ts
+
