@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "image": "assets/blog1.jpeg",
+    "date_day": "25",
+    "date_month": "june",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-01.png",
+    "standard_post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_post_description": "To f factors that contribute "
+  },
+  {
+    "id": 2,
+    "image": "assets/blog2.jpeg",
+    "date_day": "19",
+    "date_month": "june",
+    "comment_number": "11",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Confident Your Dream & Struggle About Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-02.png",
+    "standard_post_title": "How To Improve Your Interview Question & Easy Answering Step By Step.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 3,
+    "image": "assets/blog3.jpeg",
+    "date_day": "31",
+    "date_month": "August",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_img": "assets/images/blog/blog-img-st-03.png",
+    "standard_post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 4,
+    "image": "assets/blog4.jpeg",
+    "date_day": "22",
+    "date_month": "July",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Find Out Your Job Location With Discussion Among Others."
+  },
+  {
+    "id": 5,
+    "image": "assets/blog5.jpeg",
+    "date_day": "04",
+    "date_month": "July",
+    "comment_number": "05",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Awareness Your Job Interviewing & Be Punctual Your Time."
+  },
+  {
+    "id": 6,
+    "image": "assets/blog6.jpeg",
+    "date_day": "06",
+    "date_month": "June",
+    "comment_number": "06",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Improve Your Interview Question & Easy Answering Step By Step."
+  },
+  {
+    "id": 7,
+    "image": "assets/blog7.jpeg",
+    "date_day": "27",
+    "date_month": "May",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-01.png",
+    "standard_post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 8,
+    "image": "assets/blog8.jpeg",
+    "date_day": "18",
+    "date_month": "january",
+    "comment_number": "11",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Confident Your Dream & Struggle About Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-02.png",
+    "standard_post_title": "How To Improve Your Interview Question & Easy Answering Step By Step.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 9,
+    "image": "assets/blog9.jpeg",
+    "date_day": "20",
+    "date_month": "December",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_img": "assets/images/blog/blog-img-st-03.png",
+    "standard_post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 10,
+    "image": "assets/blog10.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Find Out Your Job Location With Discussion Among Others."
+  },
+  {
+    "id": 11,
+    "image": "assets/blog11.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "05",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Awareness Your Job Interviewing & Be Punctual Your Time."
+  },
+  {
+    "id": 12,
+    "image": "assets/blog12.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "06",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Improve Your Interview Question & Easy Answering Step By Step."
+  },
+  {
+    "id": 13,
+    "image": "assets/blog13.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-01.png",
+    "standard_post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 14,
+    "image": "assets/blog14.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "11",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Confident Your Dream & Struggle About Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-02.png",
+    "standard_post_title": "How To Improve Your Interview Question & Easy Answering Step By Step.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 15,
+    "image": "assets/blog15.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_img": "assets/images/blog/blog-img-st-03.png",
+    "standard_post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 16,
+    "image": "assets/blog16.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Find Out Your Job Location With Discussion Among Others."
+  },
+  {
+    "id":17,
+    "image": "assets/blog17.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "05",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Awareness Your Job Interviewing & Be Punctual Your Time."
+  },
+  {
+    "id": 18,
+    "image": "assets/blog18.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "06",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Improve Your Interview Question & Easy Answering Step By Step."
+  },
+  {
+    "id": 19,
+    "image": "assets/blog19.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-01.png",
+    "standard_post_title": "To Make Your Smartness & Catch Your Bright Dream.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 20,
+    "image": "assets/blog20.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "11",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Confident Your Dream & Struggle About Your Bright Dream.",
+    "standard_img": "assets/images/blog/blog-img-st-02.png",
+    "standard_post_title": "How To Improve Your Interview Question & Easy Answering Step By Step.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 21,
+    "image": "assets/blog21.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_img": "assets/images/blog/blog-img-st-03.png",
+    "standard_post_title": "How To Be Confident When Your Job Viva In Online, You Get To Know.",
+    "standard_post_description": "To make yourself smart and catch your bright dream, it involves a combination of factors that contribute to overall personal growth and success. These include continuous learning, exercising your brain, developing good habits, maintaining a positive attitude,support."
+  },
+  {
+    "id": 22,
+    "image": "assets/blog22.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "03",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "To Find Out Your Job Location With Discussion Among Others."
+  },
+  {
+    "id": 23,
+    "image": "assets/blog23.jpeg",
+    "date_day": "03",
+    "date_month": "November",
+    "comment_number": "05",
+    "post_author": "Mr. Jack Frank",
+    "post_title": "Be Awareness Your Job Interviewing & Be Punctual Your Time."
+  }
+]
