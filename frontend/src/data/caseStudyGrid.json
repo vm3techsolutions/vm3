@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Experience Revamp for a Leading B2BSaaS Provider",
+    "objective": "Objectives: A confidential, venture-backed B2B SaaS provider headquartered in north America, serving 2,000+ enterprise…",
+    "image": "assets/case1.jpeg"  
+  },
+  {
+    "id": 2,
+    "title": "Global Digital Presence for a Religious Trust",
+    "objective": "Client: A Renowned Religious Trust Devoted to SwamijiIndustry: Spiritual & Religious ServicesTechnology Stack: React JS…",
+    "image": "assets/case2.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Enhancing User Experience and Enquiry Management for a Wireless Technology Company",
+    "objective": "Client Overview Our client specializes in wireless communication technology, offering high-quality walkie-talkies and radios. They…",
+    "image": "assets/case3.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Enhancing Employer Branding, CSR, and Legacy for a Leading CRO Organization",
+    "objective": "Objective : A well-established Contract Research Organization (CRO) reached out with concerns regarding their website,…",
+    "image": "assets/case4.jpeg"
+  },
+  {
+    "id": 5,
+    "slug": "Dureghi.com Website Optimization and Design",
+    "title": "Lead Generation for B2B",
+    "objective": "Objective : The goal of the project was to create a visually striking, efficient, and…",
+    "image": "assets/case5.jpeg"
+  },
+  {
+    "id": 6,
+ 
+    "title": "Crafting Clarity in Science and Spirituality For a Reputed Organization in San Francisco, California",
+    "objective": "Objective : To design a website for a reputed organization in San Francisco, California, that…",
+    "image": "assets/case6.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "Transforming a Gynecology Hospital’s Digital Presence",
+    "objective": "Overview A reputed gynecology hospital was facing challenges in attracting patients and growing their practice…",
+    "image": "assets/case7.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "Enhancing Online Presence and Lead Generation for a Driver Service Business",
+    "objective": "Overview The client operates a driver service business that offers drivers on a monthly, daily,.",
+    "image": "assets/case8.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Enhancing Online Presence and Branding for a Mobile and Gadgets Insurance Company",
+    "objective": "Overview A renowned mobile and gadgets insurance company provides device protection insurance and extended warranties…",
+    "image": "assets/case9.jpeg"
+  }
+]
