@@ -2,7 +2,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import blogs from "../../data/blogGrid.json";
+// import blogs from "/data/blogGrid.json";
+import blogs from '../../../public/data/blogGrid.json'
 
 export default function BlogGrid() {
   return (

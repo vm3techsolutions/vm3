@@ -1,6 +1,6 @@
 "use clent"
 import Image from "next/image";
-import blogs from "../../../data/blogDetails.json";
+import blogs from "../../../../public/data/blogDetails.json";
 
 
 export default async function BlogDetail({ params }) {

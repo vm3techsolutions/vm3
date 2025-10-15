@@ -1,6 +1,5 @@
-
 import Image from "next/image";
-import caseStudies from "../../data/caseStudyGrid.json";
+import caseStudies from "../../../public/data/caseStudyGrid.json";
 
 export default function CaseStudyDetail({ params }) {
   const { slug } = params;

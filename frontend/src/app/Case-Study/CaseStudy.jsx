@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import caseStudies from "../../data/caseStudyGrid.json";
+import caseStudies from "../../../public/data/caseStudyGrid.json";
 
 export default function CaseStudy() {
   return (

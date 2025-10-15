@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import caseStudies from "../../../data/caseStudyDetails.json";
+import caseStudies from "../../../../public/data/caseStudyDetails.json";
 
 export default async function page({ params }) {
   // Await params if needed (but usually destructured automatically)

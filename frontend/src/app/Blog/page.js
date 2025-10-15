@@ -1,11 +1,13 @@
 import BlogBanner from "./BlogBanner";
-import Blogs from "./Blogs";
+import BlogGrid from "./Blogs";
+// import Blogs from "./Blogs";
 
 export default function Home() {
     return (
      <div>
-   <BlogBanner/>
-   <Blogs/>
+
+ <BlogBanner/> 
+<BlogGrid/>
      </div>  );
   }
   
