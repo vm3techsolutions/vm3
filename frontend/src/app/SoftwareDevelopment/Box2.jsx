@@ -67,7 +67,7 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 p-6 px-20 ">
+    <div className="flex flex-col lg:flex-row gap-8 p-6 px-20 mb-[50px]">
       {services.map((service, idx) => (
         <div
           key={idx}

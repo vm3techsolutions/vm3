@@ -23,13 +23,13 @@ export default function UIUXSection() {
       </div>
 
       {/* Right Image */}
-      <div className="md:w-1/2  flex justify-center sm:pt-0 pt-5">
+      <div className="md:w-1/2  flex justify-center sm:pt-0 pt-5 ">
         <Image
-        width={50}
-        height={50}
+        width={550}
+        height={550}
           src="/assets/QualityAssurance.jpeg"
           alt="UI/UX Design Illustration"
-          className=" w-full h-[50vh] sm:h-[90vh]"
+          className=" "
         />
       </div>
     </section>

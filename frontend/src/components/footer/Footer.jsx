@@ -46,8 +46,9 @@ export default function Footer() {
               { label: "About VM3", link: "/Our-Story" },
               { label: "Products", link: "/Products" },
               { label: "Career", link: "/Career" },
-              { label: "Case Study", link: "/Case-Study" },
-              { label: "Contact Us", link: "/Contact" }
+              { label: "Contact Us", link: "/Contact" },
+                { label: "Privacy Policy", link: "/" },
+                  { label: "Terms & Conditions", link: "/" }
             ].map((item) => (
               <li key={item.label} className="flex items-center space-x-2">
                 <span className="text-[#FEC63F]">➜</span>
@@ -65,7 +66,7 @@ export default function Footer() {
           <div className="mt-4 space-y-4">
             <div className="flex items-start space-x-3">
               <FaMapMarkerAlt className="text-[#FEC63F] mt-1" />
-              <p className="text-sm text-gray-300">
+              <p className="text-[16px] text-gray-300">
                 VM3 Tech Solutions LLP,<br />
                 Office no 202 & 203,<br />
                 Second floor, Uday Chamber,<br />
@@ -74,7 +75,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-[#FEC63F]" />
-              <Link href="mailto:info@vm3techsolution.com" className="text-sm text-gray-300">
+              <Link href="mailto:info@vm3techsolution.com" className="text-[16px] text-gray-300">
                 info@vm3techsolution.com
               </Link>
             </div>
@@ -86,7 +87,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <FaPhoneAlt className="text-[#FEC63F]" />
-              <div className="text-sm text-gray-300">
+              <div className="text-[16px] text-gray-300">
                 <p>India No.</p>
                 <p>+91 7877554499</p>
               </div>

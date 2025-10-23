@@ -4,19 +4,19 @@
       "id": 1,
       "title": "Grow Yourself",
       "description": "Take your career to a successive level with the best learning opportunities. We always advise our employees on how to develop themselves and their careers.",
-      "icon": "/assets/grow.png"
+     "icon": "FaUsers"
     },
     {
       "id": 2,
       "title": "Get Mentorship",
       "description": "We mentor all our employees and evoke them to develop better career, resolve troublesome problems and make them able to take sound decisions.",
-      "icon": "/assets/mentorship.png"
+       "icon": "FaLaptopCode"
     },
     {
       "id": 3,
       "title": "Opportunities",
       "description": "If you are captivated with technology and zeal of learning there are endless opportunities at VM3. We also encourage diverse work force & equal employee opportunities.",
-      "icon": "/assets/opportunity.png"
+     "icon": "FaRocket"
     }
   ],
   "jobs": [

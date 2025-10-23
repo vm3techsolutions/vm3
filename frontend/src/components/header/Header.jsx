@@ -67,8 +67,8 @@ export default function Header() {
       ],
     },
     {
-      title: 'New Product',
-      path: '/NewProducts',
+      title: 'Plans',
+      path: '/',
     },
     {
       title: 'Career',
@@ -78,10 +78,10 @@ export default function Header() {
       title: 'Contact Us',
       path: '/Contact',
     },
-    {
-      title: 'Login',
-      path: '/Login',
-    },
+    // {
+    //   title: 'Login',
+    //   path: '/Login',
+    // },
   ];
 
   return (
@@ -95,7 +95,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-12">
           {menuItems.map((item, idx) => (
             <div key={idx} className="relative group">
               <Link href={item.path || '#'} className="hover:text-yellow-400 transition">

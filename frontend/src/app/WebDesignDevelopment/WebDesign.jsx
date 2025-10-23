@@ -26,11 +26,11 @@ We develop Business Growth.
       {/* Right Image */}
       <div className="md:w-1/2  flex justify-center sm:pt-0 pt-5">
         <Image
-        width={50}
-        height={50}
+        width={550}
+        height={550}
           src="/assets/webDevelopement.jpg"
           alt="UI/UX Design Illustration"
-          className=" w-full h-[50vh] sm:h-[90vh]"
+          className=" h-[300px] lg:h-[400px]"
         />
       </div>
     </section>
